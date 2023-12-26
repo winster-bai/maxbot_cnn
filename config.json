@@ -1,0 +1,37 @@
+{
+  "name": {
+    "zh-cn": "maxbot神经网络",
+    "en": "maxbot_Tensorflow"
+  },
+  "description": {
+    "zh-cn": "maxbot课程专用神经网络库",
+    "en": "Tensorflow lib for maxbot"
+  },
+  "author": "winster",
+  "email": "2310016043@qq.com",
+  "license": "MIT",
+  "isBoard": false,
+  "id": "tensorflow",
+  "version": "0.0.1",
+  "platform": [
+    "win"
+  ],
+  "asset": {
+    "python": {
+      "dir": "python/",
+      "main": "main.ts",
+      "version": "0.0.1",
+      "dependencies": {
+        "pinpong": ""
+      },
+      "files": [
+        "_images/featured.png",
+        "_images/icon.svg",
+        "_locales/zh-cn.json",
+        "_menus/index.json",
+        "libraries/libraries.zip"
+      ]
+    }
+  },
+  "isTest": false
+}
