@@ -271,6 +271,15 @@ ${pre2} = ${mod3}.run([output_name], {input_name: ${img7}.astype(np.float32)})[0
    
    }
 
+    //% block="将数据[OBJ]独立热编码的结果返回变量[VALVE]中" blockType="command" 
+    //% VALVE.shadow="normal" VALVE.defl="y" 
+    //% OBJ.shadow="normal" OBJ.defl="y" 
+    export function Sklearn_to_categorical(parameter: any, block: any){ 
+        let obj=parameter.OBJ.code; 
+        let value=parameter.VALVE.code; 
+        Generator.addCode(${value} = keras.utils.to_categorical(${obj},num_classes=None)) 
+            } 
+
     //% block="输出[PRE3]预测结果" blockType="command"
     //% PRE3.shadow="normal"   PRE3.defl="predictions"
     export function predict_output(parameter: any, block: any){ 
