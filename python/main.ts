@@ -277,7 +277,7 @@ ${pre2} = ${mod3}.run([output_name], {input_name: ${img7}.astype(np.float32)})[0
     export function Sklearn_to_categorical(parameter: any, block: any){ 
         let obj=parameter.OBJ.code; 
         let value=parameter.VALVE.code; 
-        Generator.addCode(${value} = keras.utils.to_categorical(${obj},num_classes=None)) 
+        Generator.addCode(`${value} = keras.utils.to_categorical(${obj},num_classes=None)`) 
             } 
 
     //% block="输出[PRE3]预测结果" blockType="command"
